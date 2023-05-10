@@ -14,9 +14,6 @@ def location(request):
 
 def menu_page(request):
     products = ProductCard.objects.all()
-    cart = get_object_or_404(UserCart, user=request.user)
-    cart_items = cart.cartitem_set.all()
-    total_price = cart.get_total_price()
     categories = []
     for product in products:
         if product.category not in categories:
@@ -28,8 +25,6 @@ def menu_page(request):
     context = {
         'categories': categories,
         'products': products,
-        'total_price': total_price,
-        'cart_items': cart_items,
     }
 
     return render(request, 'menu_page.html', context)
