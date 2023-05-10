@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-name {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-area {
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  width: 300px;
+  height: max-content;
+}
+.form-area .errors-area {
+  background-color: #382722;
+  font-size: 13px;
+  text-align: left;
+}
+.form-area .errors-area .errorlist {
+  padding: 10px 0;
+  margin: 0;
+}
+.form-area .fields-area {
+  padding: 10px;
+}
+.form-area .field {
+  font-size: 0.8rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-area .field:not(:first-child) {
+  margin-top: 10px;
+}
+.form-area .field input {
+  height: 1.3rem;
+}
+.form-area .form-button {
+  margin-top: 10px;
+  height: 2rem;
+  padding: 0 20px;
+  background-color: #292929;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=form.css.map */

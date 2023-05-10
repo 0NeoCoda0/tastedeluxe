@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #131313;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.body-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  height: 100vh;
+  font-size: 20px;
+  color: #dfdfdf;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+header.header {
+  grid-area: header;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+header.header-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "company-name company-name company-name company-name" "menu about cart profile ";
+  grid-gap: 10px;
+}
+header.header-wrapper .company-name {
+  grid-column: 1/-1;
+  font-size: medium;
+  grid-area: company-name;
+  border-bottom: 1px dotted #8a8a8a;
+}
+header.header-wrapper .company-name .logo-img {
+  height: 60px;
+}
+
+img.menu-ico {
+  height: 30px;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+div.nav-flex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+a.menu {
+  grid-area: menu;
+}
+
+a.about {
+  grid-area: about;
+}
+
+a.cart {
+  grid-area: cart;
+}
+
+a.profile {
+  grid-area: profile;
+}
+
+main.main {
+  border-top: 1px dotted #8a8a8a;
+  border-bottom: 1px dotted #8a8a8a;
+  grid-area: main;
+  overflow: auto;
+  padding: 10px;
+}
+
+footer.footer {
+  grid-area: footer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=base.css.map */

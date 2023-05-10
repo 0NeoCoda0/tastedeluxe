@@ -1,0 +1,43 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'content/css/menu_page.css' %}">
+
+{% endblock link %}
+
+{% block main %}
+
+    {% for category in categories %}
+
+    <h1 class="category-name">{{ category }}</h1>
+
+        {% for product in products %}
+            {% if product.category == category  %}
+                <div class="product-card">
+                    <h2 class="product-name">{{product.name|capfirst}}</h2>
+                    <img src="/media/{{product.image}}" alt="{{product.name|capfirst}}">
+                    <div class="product-info">
+                        <div class="product-price">{{product.price}} Р</div>
+                        <div class="product-weight">{{product.weight}} кг</div>
+                    </div>
+                    <button class="add-button add-to-cart" data-csrf-token="{{ csrf_token }}" data-product-id="{{ product.id }}">Добавить</button>
+                </div>
+            {% endif %}    
+        {% endfor %}
+
+    {% endfor %}
+
+<script src="{% static 'content/javascripts/addToCart.js'%}"></script>
+
+{% endblock main %}
+
+{% block footer %}
+<div class="total-price">Сумма заказа: {{total_price}} рублей</div>
+{% endblock footer %}
+
+<!--Сделать в футере выбор горячее или полуфабрикат
+Стоимость заказа
+Корзина
+Оформить-->

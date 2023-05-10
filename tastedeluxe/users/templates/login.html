@@ -1,0 +1,38 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'content/css/form.css' %}">
+{% endblock link %}
+
+{% block main %}
+<form method="POST" class="form-area">
+  {% csrf_token %}
+
+  <h1 class="form-name">Вход</h1>
+  <div class="errors-area">
+    {% if form.username.errors %}
+    <div class="error">{{ form.username.errors }}</div>
+    {% endif %}
+    {% if form.password1.errors %}
+    <div class="error">{{ form.password1.errors }}</div>
+    {% endif %}
+  </div>
+
+  <div class="fields-area">
+    <div class="field">
+      <label for="{{ form.username.id_for_label }}">Имя пользователя:</label>
+      {{ form.username }}
+
+    </div>
+
+    <div class="field">
+      <label for="{{ form.password.id_for_label }}">Пароль:</label>
+      {{ form.password }}
+    </div>
+
+    <button class="form-button"> Войти </button>
+  </div>
+
+</form>
+{% endblock main %}
