@@ -16,12 +16,12 @@
         {% for product in products %}
             {% if product.category == category  %}
                 <div class="product-card">
-                    <h2 class="product-name">{{product.name|capfirst}}</h2>
                     <img src="/media/{{product.image}}" alt="{{product.name|capfirst}}">
                     <div class="product-info">
-                        <div class="product-price">{{product.price}} Р</div>
-                        <div class="product-weight">{{product.weight}} кг</div>
+                        <div class="product-price">{{product.price|floatformat:0}} Р</div>
+                        <div class="product-weight">{{product.weight|floatformat:0}} кг</div>
                     </div>
+                    <span class="product-name">{{product.name|capfirst}}</span>
                     <button class="add-button add-to-cart" data-csrf-token="{{ csrf_token }}" data-product-id="{{ product.id }}">Добавить</button>
                 </div>
             {% endif %}    

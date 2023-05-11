@@ -25,38 +25,36 @@
             </div>
             <a class="nav-item menu" href="{% url 'menu_page' %}">
                 <div class="nav-flex">
-                    <img src="{% static 'content/ico/hot-food.png'%}" class="menu-ico" alt=""> <span>Меню</span>
+                    <div class="img-box">
+                        <img src="{% static 'content/ico/menu.png'%}" class="menu-ico" alt=""> 
+                    </div>
+                    МЕНЮ
                 </div>
             </a>
             <a class="nav-item about" href="{% url 'about' %}">
                 <div class="nav-flex">
-                    <img src="{% static 'content/ico/mail.png'%}" class="menu-ico" alt="">О нас
+                    <div class="img-box">
+                        <img src="{% static 'content/ico/about.png'%}" class="menu-ico" alt="">
+                    </div>
+                    О НАС
                 </div>
             </a>
-            {% if user.is_authenticated %}
             <a class="nav-item cart" href="#">
                 <div class="nav-flex">
-                    <img src="{% static 'content/ico/shopping-ico.png'%}" class="menu-ico" alt=""> Корзина
-                </div class="nav-flex">
+                    <div class="img-box">
+                        <img src="{% static 'content/ico/cart.png'%}" class="menu-ico" alt=""> 
+                    </div>
+                    КОРЗИНА
+                </div>
             </a>
             <a class="nav-item profile" href="{% url 'profile' %}">
                 <div class="nav-flex">
-                    <img src="{% static 'content/ico/deliver.png'%}" class="menu-ico" alt="">Профиль
+                    <div class="img-box">
+                        <img src="{% static 'content/ico/profile.png'%}" class="menu-ico" alt="">
+                    </div>
+                    ПРОФИЛЬ
                 </div>
             </a>
-            {% else %}
-            <a class="nav-item cart" href="{% url 'login' %}">
-                <div class="nav-flex">
-                    <img src="{% static 'content/ico/keitering.png'%}" class="menu-ico" alt=""> Вход
-                </div class="nav-flex">
-            </a>
-            <a class="nav-item profile" href="{% url 'register' %}">
-                <div class="nav-flex">
-                    <img src="{% static 'content/ico/freeze.png'%}" class="menu-ico" alt="">Регистрация
-                </div>
-            </a>
-            {% endif %}
-
         </header>
         <main class="main main-wrapper">{% block main %}{% endblock main %}</main>
         <footer class="footer">{% block footer %}{% endblock footer %}</footer>
