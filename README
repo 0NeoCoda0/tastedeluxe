@@ -4,3 +4,19 @@ python manage.py migrate --run-syncdb
 Как использовать постгрес в приложении Джанго:
 https://www.8host.com/blog/kak-ispolzovat-postgresql-v-prilozhenii-django/
 pip install psycopg2-binary
+
+Удалить БД:
+Предотвращаем возможность новых подключений
+
+UPDATE pg_database SET datallowconn = 'false' WHERE datname = 'database_name';
+
+
+Закрываем текущие сессии
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'database_name' AND pid <> pg_backend_pid();
+
+
+Удаляем базу
+DROP DATABASE database_name;
