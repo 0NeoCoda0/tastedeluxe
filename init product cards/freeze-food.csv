@@ -1,0 +1,36 @@
+name,price,image,category,type
+классические,500,product_image/галушки м.jpg,ГАЛУШКИ,freeze-food
+кукурузные,500,product_image/галушки кукурузные.jpg,ГАЛУШКИ,freeze-food
+ракушки,600,product_image/ракушки с мясом.jpg,ГАЛУШКИ,freeze-food
+с тыквой,800,product_image/манты м.jpg,МАНТЫ,freeze-food
+с бараниной,1000,product_image/манты с бараниной.jpg,МАНТЫ,freeze-food
+с говядиной,1000,product_image/манты с говядиной.jpg,МАНТЫ,freeze-food
+с рубленным мясом,1200,product_image/манты с рубленым мясом.jpg,МАНТЫ,freeze-food
+с творогом,700,product_image/вареники с творогом.jpg,ВАРЕНИКИ,freeze-food
+с творогом и луком,700,product_image/вареники с луком.jpg,ВАРЕНИКИ,freeze-food
+с вишней,800,product_image/вареники с вишней.jpg,ВАРЕНИКИ,freeze-food
+с картошкой,600,product_image/вареники с картошкой.jpg,ВАРЕНИКИ,freeze-food
+с картошкой и грибами,700,product_image/вареники с грибами и картошкой.jpg,ВАРЕНИКИ,freeze-food
+говядина,800,product_image/пельмени_говядина_индейка_баранина_детские.jpg,ПЕЛЬМЕНИ,freeze-food
+индейка,800,product_image/пельмени с индейкой.jpg,ПЕЛЬМЕНИ,freeze-food
+баранина,800,product_image/пельмени с бараниной.jpg,ПЕЛЬМЕНИ,freeze-food
+детские,1200,product_image/пельмени детские.jpg,ПЕЛЬМЕНИ,freeze-food
+с мясом,1000,product_image/курзе м.jpg,КУРЗЕ,freeze-food
+с творогом,800,product_image/курзе с творогом.jpg,КУРЗЕ,freeze-food
+с картошкой,700,product_image/курзе с картошкой.jpg,КУРЗЕ,freeze-food
+с капустой,700,product_image/курзе с капустой.jpg,КУРЗЕ,freeze-food
+Долма,1000,product_image/долма м.jpg,ДРУГОЕ,freeze-food
+Фаршированный перец,1000,product_image/перцы м.jpg,ДРУГОЕ,freeze-food
+Фрикадельки,1000,product_image/фрикадельки_инд_слэш_кур_слэш_гов.jpg,ДРУГОЕ,freeze-food
+Голубцы,800,product_image/голубцы м.jpg,ДРУГОЕ,freeze-food
+Тефтели,800,product_image/,ДРУГОЕ,freeze-food
+Домашняя курица 1 кг,600,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Отварная баранья голова и ноги,1000,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Куриный фарш 1кг.,700,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Фарш из говядины 1кг.,800,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Сушеное мясо 1кг.,1600,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Сушеная конина 1кг.,2000,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Колбасы с рубленым мясом 1 кг.,1500,product_image/колбаса.jpg,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Колбасы с фаршем 1кг.,1200,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+Говяжий язык 1кг,800,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
+1 баар в заморозке 0.5кг.,600,,ФЕРМЕРСКИЕ ПРОДУКТЫ,freeze-food
