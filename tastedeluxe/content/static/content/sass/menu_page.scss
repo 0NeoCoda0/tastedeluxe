@@ -10,9 +10,12 @@ $border-radius: 20px;
 
 .category-name {
     grid-column: span 2;
-    font-size: 26px;
-    margin: 17px;
-    
+    font-size: 23px;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(to left,#62606000,#626060, #62606000);
+    font-weight: 400;
 }
 
 .product-card {
